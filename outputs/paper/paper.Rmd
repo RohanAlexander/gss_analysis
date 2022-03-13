@@ -3,7 +3,7 @@ title: "Age and gender in the 2021 US GSS"
 subtitle: "Possible selection effect in ages 18-35"
 author: 
   - Rohan Alexander
-thanks: "Code and data are available at: LINK."
+thanks: "Code and data are available at: https://github.com/RohanAlexander/gss_analysis."
 date: "`r format(Sys.time(), '%d %B %Y')`"
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 output:
@@ -23,6 +23,7 @@ library(palmerpenguins)
 
 You can and should cross-reference sections and sub-sections. For instance, Section \@ref(data). R Markdown automatically makes the sections lower case and adds a dash to spaces to generate labels, for instance, Section \@ref(first-discussion-point). 
 
+@citeR
 
 
 # Data
@@ -59,20 +60,8 @@ Talk way more about it.
 
 
 
-# Model
-
-\begin{equation}
-Pr(\theta | y) = \frac{Pr(y | \theta) Pr(\theta)}{Pr(y)}  (\#eq:bayes)
-\end{equation}
-
-Equation \@ref(eq:bayes) seems useful, eh?
-
-Here's a dumb example of how to use some references: In paper we run our analysis in `R` [@citeR]. We also use the `tidyverse` which was written by @thereferencecanbewhatever If we were interested in baseball data then @citeLahman could be useful. 
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
 # Results
+
 
 # Discussion
 
@@ -95,7 +84,38 @@ Weaknesses and next steps should also be included.
 # Appendix {-}
 
 
-# Additional details
+# Supplementary survey
+
+Our supplementary survey is available here: LINK
+
+## Preamble
+
+The purpose of this survey is to further investigate gender. We are interested in more detailed gender data than is provided by the main US GSS and will use this to guide the development of submissions to change future iterations of the GSS.
+
+By proceeding with the survey, you understand that we will use your responses to better understand gender responses in the GSS. The survey is voluntary, and if you decide to participate you can skip questions and withdraw at any time.
+
+## Questions
+
+1. What is your age?
+    - 18-29
+    - ... ADD all the others
+2. What is your gender?
+    - Female
+    - Male
+    - Transgender
+    - Non-binary
+    - Genderqueer
+    - Two-spirit
+    - Other
+ADD some other questions
+
+## End page
+
+Thank you very much for partiicpating in our survey. If you have any questions, you can email rohan.alexander@utoronto.ca
+
+
+
+
 
 
 \newpage
